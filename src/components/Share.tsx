@@ -91,7 +91,7 @@ const Share = ({ config }: ShareProps) => {
           size="large"
           onClick={() => handleShareOnInstagram()}
         >
-          Instagram
+          Facebook
         </InstagramShareButton>
         <CopyToClipboard text={baseURL} onCopy={handleCopyToClipboard}>
           <LinkShareButton style={{ margin: 8 }} icon={<LinkOutlined />} size="large">
