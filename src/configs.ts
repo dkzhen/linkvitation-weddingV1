@@ -7,9 +7,10 @@ import GalleryPhoto4 from './resources/Gallery_Photo_4.png';
 import GalleryPhoto5 from './resources/Gallery_Photo_5.png';
 import GalleryPhoto6 from './resources/Gallery_Photo_6.png';
 
+const baseURL = window.location.origin;
 const Configs: ConfigsType = {
-  
-  url: 'http://localhost:3000',
+  orderName:'order-v1',
+  url: baseURL,
   kakaoToken: '카카오톡 API 토큰을 입력해주세요!',
   kakaoImage: '카카오톡으로 공유할 때 사용되는 대표이미지 URL을 입력해주세요!',
   weddingDate: '4 July 2023',
@@ -45,6 +46,7 @@ const Configs: ConfigsType = {
 };
 
 export type ConfigsType = {
+  orderName: string;
   url: string;
   kakaoToken: string;
   kakaoImage: string;

@@ -69,9 +69,8 @@ type ShareProps = {
 };
 
 const Share = ({ config }: ShareProps) => {
-  const baseURL = window.location.origin;
   const handleShareOnInstagram = () => {
-    const instagramURL = `https://www.facebook.com/sharer/sharer.php?app_id=113869198637480&display=popup&sdk=joey&u=https://linkvitation-wedding-v1.vercel.app/`;
+    const instagramURL = `https://www.facebook.com/sharer/sharer.php?app_id=113869198637480&display=popup&sdk=joey&u=${config.url}/${config.orderName}`;
     window.open(instagramURL, '_blank');
   };
 
@@ -93,7 +92,7 @@ const Share = ({ config }: ShareProps) => {
         >
           Facebook
         </InstagramShareButton>
-        <CopyToClipboard text={baseURL} onCopy={handleCopyToClipboard}>
+        <CopyToClipboard text={`${config.url}/${config.orderName}`} onCopy={handleCopyToClipboard}>
           <LinkShareButton style={{ margin: 8 }} icon={<LinkOutlined />} size="large">
             Salin Tautan
           </LinkShareButton>
