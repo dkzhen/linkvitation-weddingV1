@@ -8,6 +8,7 @@ import GalleryPhoto5 from './resources/Gallery_Photo_5.png';
 import GalleryPhoto6 from './resources/Gallery_Photo_6.png';
 
 const Configs: ConfigsType = {
+  
   url: 'http://localhost:3000',
   kakaoToken: '카카오톡 API 토큰을 입력해주세요!',
   kakaoImage: '카카오톡으로 공유할 때 사용되는 대표이미지 URL을 입력해주세요!',
@@ -38,6 +39,8 @@ const Configs: ConfigsType = {
     GalleryPhoto4,
     GalleryPhoto5,
     GalleryPhoto6,
+    GalleryPhoto3,
+    GalleryPhoto4,
   ],
 };
 

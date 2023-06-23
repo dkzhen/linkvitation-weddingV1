@@ -21,6 +21,10 @@ const Title = styled('p', {
   fontWeight: '500',
 });
 
+const StyledRow = styled(Row, {
+  padding: isPortrait ? '0 16px 0 8px' : 0, // Added padding values to the Row
+});
+
 type GalleryProps = {
   config: ConfigsType;
 };
@@ -43,15 +47,15 @@ const Gallery = ({ config }: GalleryProps) => {
       }}
     >
       <Layout>
-        <Title>Our Beautiful Moment</Title>
+        <Title>Momen Indah Kita</Title>
       </Layout>
-      <Row gutter={[16, 16]}>
+      <StyledRow gutter={[16, 16]}>
         {config.galleryImages.map((image, index) => (
           <Col key={index} span={isPortrait ? 6 : 3}>
             <Image width={isPortrait ? width / 4 - 10 : width / 8 - 10} src={image} />
           </Col>
         ))}
-      </Row>
+      </StyledRow>
     </section>
   );
 };

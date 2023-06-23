@@ -52,11 +52,12 @@ const Location = ({ config }: LocationProps) => {
           5 Menit Dari Lapangan Jetayu Dan Stadion Keraton.
           <br />
           <br />
-          <img
-            style={{ width: isPortrait ? '90%' : '60%' }}
-            src={config.locationMapImage}
-            alt="Wedding Invitation Title Picutre"
-          />
+          <iframe
+            style={{ width: isPortrait ? '90%' : '60%', border: '0' }}
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.1368231592724!2d109.6683199218778!3d-6.874205158819413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7025d80e03b5e9%3A0x3be4e1ed9ecee65c!2sSchool%20of%20Management%20Information%20and%20Computer%20Widya%20Pratama%20Pekalongan!5e0!3m2!1sen!2sid!4v1687488354563!5m2!1sen!2sid"
+            width="600"
+            height="450"
+          ></iframe>
         </SubTitle>
       </Layout>
     </Section>
